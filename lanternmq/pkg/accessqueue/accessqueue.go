@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/onc-healthit/lantern-back-end/lanternmq"
-	"github.com/onc-healthit/lantern-back-end/lanternmq/rabbitmq"
+	"github.com/Medical-Mettles/lantern-back-end/lanternmq"
+	"github.com/Medical-Mettles/lantern-back-end/lanternmq/rabbitmq"
 	"github.com/pkg/errors"
 	"github.com/streadway/amqp"
 )
