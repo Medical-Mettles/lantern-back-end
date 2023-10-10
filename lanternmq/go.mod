@@ -1,4 +1,4 @@
-module github.com/onc-healthit/lantern-back-end/lanternmq
+module github.com/Medical-Mettles/lantern-back-end/lanternmq
 
 go 1.14
 
