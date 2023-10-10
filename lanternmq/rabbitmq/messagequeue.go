@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/onc-healthit/lantern-back-end/lanternmq"
+	"github.com/Medical-Mettles/lantern-back-end/lanternmq"
 	"github.com/streadway/amqp"
 )
 
