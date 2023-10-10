@@ -226,7 +226,7 @@ func (mq *MessageQueue) PublishToQueue(chID lanternmq.ChannelID, qName string, m
 // noWait: false
 // args: nil
 func (mq *MessageQueue) ConsumeFromQueue(chID lanternmq.ChannelID, qName string) (lanternmq.Messages, error) {
-	log.Info("In consumefromQueue--"+qName)
+	fmt.println("In consumefromQueue--"+qName)
 	ch, err := mq.getChannel(chID)
 	if err != nil {
 		return nil, err
