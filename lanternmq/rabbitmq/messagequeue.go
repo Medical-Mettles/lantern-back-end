@@ -7,6 +7,8 @@ import (
 
 	"github.com/Medical-Mettles/lantern-back-end/lanternmq"
 	"github.com/streadway/amqp"
+
+	log "github.com/sirupsen/logrus"
 )
 
 const autoAckFalse bool = false
@@ -226,7 +228,7 @@ func (mq *MessageQueue) PublishToQueue(chID lanternmq.ChannelID, qName string, m
 // noWait: false
 // args: nil
 func (mq *MessageQueue) ConsumeFromQueue(chID lanternmq.ChannelID, qName string) (lanternmq.Messages, error) {
-	fmt.println("In consumefromQueue--"+qName)
+	log.Debug("In consumefromQueue--"+qName)
 	ch, err := mq.getChannel(chID)
 	if err != nil {
 		return nil, err
